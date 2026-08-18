@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  --charcoal: #1a1614;
+  --charcoal-light: #2d2622;
+  --cream: #faf6f0;
+  --saffron: #e8a838;
+  --saffron-light: #f0bc5a;
+  --terracotta: #c45c3e;
+  --terracotta-dark: #8b3a2a;
+}
+
+@theme inline {
+  --color-charcoal: var(--charcoal);
+  --color-charcoal-light: var(--charcoal-light);
+  --color-cream: var(--cream);
+  --color-saffron: var(--saffron);
+  --color-saffron-light: var(--saffron-light);
+  --color-terracotta: var(--terracotta);
+  --color-terracotta-dark: var(--terracotta-dark);
+  --font-display: var(--font-playfair), Georgia, serif;
+  --font-sans: var(--font-dm-sans), system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--charcoal);
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+::selection {
+  background: var(--saffron);
+  color: var(--charcoal);
+}
